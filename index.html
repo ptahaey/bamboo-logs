@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Bamboo View logs tool</title>
+    <link type="text/css" rel="stylesheet" href="//cdn.rawgit.com/ptahaey/bamboo-logs/master/styles.css" media="all" />
+    <script type="text/javascript" src="//cdn.rawgit.com/ptahaey/bamboo-logs/master/jquery-3.3.1.min.js"></script>    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="input">
+            <p>Put logs from bamboo (the output from .log path) in the input below</p>
+            <textarea placeholder="Put logs here..."></textarea>
+        </div>
+        <div id="do-magic">
+            <p>Do magic</p>
+        </div>
+        <div class="output">
+            <p>...formatted logs list should appear bellow</p>
+            <textarea></textarea>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#do-magic p').on('click', function () {
+               $('.output textarea').val(
+                   $('.input textarea').val().replace(/\\n/g,'\n')
+               )
+               
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body div.wrapper {
+    display: table;
+    margin: 0 auto;
+}
+
+div.wrapper div.input,
+div.wrapper div.output {
+    min-width: 1000px;
+}
+div.wrapper div.input textarea,
+div.wrapper div.output textarea {
+    min-height: 400px;
+    width: 100%;
+}
+#do-magic p
+{
+    margin: 10 auto;
+    padding: 2px;
+    text-align: center;
+    border-style: solid;
+    cursor: pointer;
+}
