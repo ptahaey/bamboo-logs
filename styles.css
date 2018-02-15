@@ -5,10 +5,9 @@ body div.wrapper {
 
 div.wrapper div.input,
 div.wrapper div.output {
-    min-width: 1000px;
+    width: 1000px;
 }
-div.wrapper div.input textarea,
-div.wrapper div.output textarea {
+div.wrapper div.input textarea {
     min-height: 400px;
     width: 100%;
 }
@@ -19,4 +18,15 @@ div.wrapper div.output textarea {
     text-align: center;
     border-style: solid;
     cursor: pointer;
+}
+div.wrapper div.output div.formatted {
+    height: 400px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    overflow-y: scroll;
+    padding: 2px 3px;
+}
+span.warning {
+    background-color: yellow;
 }
